@@ -12,4 +12,4 @@ RUN mvn clean package -DskipTests
 
 EXPOSE 8081
 
-CMD ["java", "-jar", "target/*.jar"]
+CMD sh -c "java -jar target/*.jar"
