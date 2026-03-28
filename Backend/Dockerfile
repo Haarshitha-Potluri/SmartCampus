@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . .
 
+WORKDIR /app/Backend   
+
 RUN apt-get update && apt-get install -y maven
 
 RUN mvn clean package -DskipTests
