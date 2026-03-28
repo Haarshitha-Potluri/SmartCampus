@@ -6,7 +6,7 @@ COPY . .
 
 RUN apt-get update && apt-get install -y maven
 
-RUN chmod +x mvnw && ./mvnw clean package -DskipTests -Dmaven.test.skip=true
+RUN mvn clean package -DskipTests
 
 EXPOSE 8081
 
